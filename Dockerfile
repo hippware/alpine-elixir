@@ -19,6 +19,7 @@ RUN \
       git && \
     git clone https://github.com/elixir-lang/elixir --depth 1 --branch $ELIXIR_VERSION && \
     cd elixir && \
+    export PREFIX=/usr && \
     make && make install && \
     mix local.hex --force && \
     mix local.rebar --force && \
