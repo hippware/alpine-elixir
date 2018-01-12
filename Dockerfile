@@ -24,6 +24,7 @@ RUN \
     mix local.hex --force && \
     mix local.rebar --force && \
     cd $HOME && \
+    chown -R default .mix && \
     rm -rf /tmp/elixir-build && \
     apk del .elixir-build
 
