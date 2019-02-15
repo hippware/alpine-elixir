@@ -24,7 +24,7 @@ RUN \
     cd $HOME && \
     chown -R default .mix && \
     rm -rf /tmp/elixir-build && \
-    apk del .elixir-build
+    apk del --no-cache .elixir-build
 
 WORKDIR ${HOME}
 
